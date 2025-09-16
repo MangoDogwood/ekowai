@@ -1383,13 +1383,22 @@ section {
 .footer-brand {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    align-items: flex-start;
+    padding-right: 32px;
 }
 
 .footer-logo {
-    height: 48px;
+    height: 80px;
     width: auto;
-    max-width: 150px;
+    max-width: 250px;
+    filter: brightness(1.1) contrast(1.1) drop-shadow(0 4px 12px rgba(212, 175, 55, 0.3));
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2) contrast(1.2) drop-shadow(0 6px 16px rgba(212, 175, 55, 0.4));
 }
 
 .footer-tagline {
